@@ -11,9 +11,9 @@ class Calculator:
         part = CarPart(part_name)
         color = Color(color_name)
         price = self.base_price * part.multiplier * color.multiplier
-        return round(price, 2)
+        return round(price)
 
     def calculate_with_discount(self, part_name: str, color_name: str, discount: float) -> float:
         price = self.calculate(part_name, color_name)
         final_price = price * (1 - discount / 100)
-        return round(final_price, 2)
+        return round(final_price)

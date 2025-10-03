@@ -1,5 +1,4 @@
 class CarPart:
-    """Класс детали автомобиля: name и multiplier."""
     PART_MULTIPLIERS = {
         "капот": 1.0,
         "передняя дверь": 1.2,
